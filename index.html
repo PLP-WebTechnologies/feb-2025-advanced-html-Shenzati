@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+  <h1>Advanced HTML5 Elements and Forms Assignment</h1>  
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Allan</li>
+        <li>Shirleen</li>
+        <li>Loreen</li>
+        <li>Eddy</li>
+        <li>Brenda</li>
+    </ol>
+    
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/3992196/pexels-photo-3992196.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cake on Brown Wooden Table" width="500">
+    
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Allan Kotange</td>
+            <td>Kasa Hunters</td>
+            <td>+2274567896</td>
+            <td>allan@email.com</td>
+        </tr>
+        <tr>
+            <td>Janet Kevo</td>
+            <td>Ruiru OJ</td>
+            <td>+7987684322</td>
+            <td>janet@email.com</td>
+        </tr>
+        <tr>
+            <td>Michael Mwakazi</td>
+            <td>Mtwapa</td>
+            <td>+3122334479</td>
+            <td>michael@email.com</td>
+        </tr>
+        <tr>
+            <td>Milka Kasmuel</td>
+            <td>Thika</td>
+            <td>+5866778826</td>
+            <td>milka@email.com</td>
+        </tr>
+        <tr>
+            <td>Kevo</td>
+            <td>Mwihoko</td>
+            <td>+9776889965</td>
+            <td>kevo@email.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" placeholder="Enter password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br><br>
+
+        <label>Subscription:</label>
+        <input type="checkbox" id="newsletter" name="subscription" value="newsletter">
+        <label for="newsletter">Subscribe to Newsletter</label>
+        <br><br>
+
+        <label>Choose your account type:</label>
+        <input type="radio" id="personal" name="account_type" value="personal" required>
+        <label for="personal">Personal</label>
+        <input type="radio" id="business" name="account_type" value="business">
+        <label for="business">Business</label>
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
